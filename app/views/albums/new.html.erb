@@ -1,0 +1,10 @@
+<h2>New Albums</h2>
+<%= link_to "Back", albums_path %>
+
+<%= form_for (@album) do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <%= f.submit "Add Album" %>
+<% end %>

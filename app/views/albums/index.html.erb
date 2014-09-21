@@ -1,0 +1,8 @@
+<div><%= link_to "Admin Access to Add New Album", new_album_path %></div>
+<div><%= link_to "Home", root_path %></div>
+
+<h1>Albums Gallery</h1>
+
+<% @albums.each do |album| %>
+  <div><%= link_to album.name, "/albums/#{album.id}" %></div>
+<% end %>
