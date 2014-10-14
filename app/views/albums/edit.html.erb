@@ -1,0 +1,12 @@
+<h2>Edit Album</h2>
+
+
+<%= form_for (@album) do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  
+  <%= f.submit "Edit Album" %>
+  </div>
+<% end %>
+<br> <%= link_to "Back", album_path%>

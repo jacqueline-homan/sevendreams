@@ -1,6 +1,8 @@
 <h2>New Albums</h2>
 <%= link_to "Back", albums_path %>
 
+<%= link_to "Delete", albums_path%>
+
 <%= form_for (@album) do |f| %>
   <div>
     <%= f.label :name %>
